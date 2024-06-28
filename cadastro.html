@@ -13,14 +13,17 @@
     <div class="container col-4">
         <h3>Cadastro</h3>
         <div class="container">
-            <label for="">Nome</label>
-            <input type="text" class="form-control" id="nomeUser"> <br>
+            <label for="">Nome</label> <br>
+            <input type="text" class="form-control" id="nomeUser">
             <button  class="btn btn-danger">SALVAR</button>
         </div>
 
         <div class="container">
-            <table class="table table-striped">
-                
+            <table class="table table-striped" id="tabela">
+                <tr>
+                    <th>Nome Usuário</th>
+                    <th> Ações </th>
+                </tr>
             </table>
         </div>
         <script src='controller.js'></script>
