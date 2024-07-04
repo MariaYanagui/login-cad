@@ -12,3 +12,7 @@ function acessar() {
     }
 }
 //  FUNÇÃO PARA ARMAZANAMENTO DE NOMES EM ARRY
+    var dadosLista = [];
+    function salvarUser(){
+
+    }
