@@ -1,12 +1,14 @@
 // FUNÇÃO PARA VALIDAÇÃO DE ACESSO 
 
-function acessar(){
-    let loginEmail = document.getElementById ("loginEmail").value;
-    let loginSenha = document.getElementbById ("loginSenha").value;
-    
-    if(!loginEmail || loginSenha){
+function acessar() {
+    let loginEmail = document.getElementById("loginEmail").value;
+    let loginSenha = document.getElementById("loginSenha").value;
+
+    if (!loginEmail || !loginSenha) {
         alert("Favor preencher todos os campos!");
-    }else{
-        alert("Campos preenchidos com sucesso!");
+    } else {
+        // alert("Campos preenchidos com sucesso!");
+        window.location.href = "cadastro.html";
     }
 }
+//  FUNÇÃO PARA ARMAZANAMENTO DE NOMES EM ARRY
