@@ -22,4 +22,9 @@ function acessar() {
     }else{
         alert("Favor informe um nome para cadastro");
     }
-    }
+}
+
+// FUNÇAO PARA CRIAR LISTA DE USUÁRIOS 
+function criaLista(){
+    let tabela = document.getElementById("tabela").innerHTML = "<tr><th>Nome Isuário</th></th>Ações</th></tr>";
+}
