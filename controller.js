@@ -21,6 +21,8 @@ function acessar() {
         // console.log(dadosLista); ( foi apenas usado para ver se o arreio foi preenchido)
         criaLista();
         document.getElementById("nomeUser").value = "";
+        // USADO PARA LIMPAR O CAMPO DE DIGITAÇÃO DA PÁGINA APÓS O USO 
+
     }else{
         alert("Favor informe um nome para cadastro");
     }
@@ -28,11 +30,11 @@ function acessar() {
 
 // FUNÇAO PARA CRIAR LISTA DE USUÁRIOS 
 function criaLista(){
-    let tabela = document.getElementById("tabela").innerHTML = "<tr><th>Nome Isuário</th></th>Ações</th></tr>";
-    for(let i=0;i <= (dadosListas.length - 1);i++){
+    let tabela = document.getElementById("tabela").innerHTML = "<tr><th>Nome Usuário</th><th>Ações</th></tr>";
+    for(let i=0;i <= (dadosLista.length - 1);i++){
         tabela += "<tr><td>" + dadosLista[i] +  "</td><td></td></tr>";
         // USADO PARA ADICIONAR UMA LISTA CASO A ANTERIOR FOR USADA
         document.getElementById("tabela").innerHTML = tabela;
-        // PARA RECEBER O VARIAVEL TABELA COM O ELEMENTO GetElementBYID
+        // PARA RECEBER A LISTA NA VARIAVEL TABELA COM O ELEMENTO GetElementBYID
     }
 }
