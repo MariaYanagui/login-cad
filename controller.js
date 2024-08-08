@@ -32,10 +32,17 @@ function acessar() {
 function criaLista(){
     let tabela = document.getElementById("tabela").innerHTML = "<tr><th>Nome Usuário</th><th>Ações</th></tr>";
     for(let i=0;i <= (dadosLista.length - 1);i++){
-        tabela += "<tr><td>" + dadosLista[i] +  "</td><td></td></tr>";
-        // USADO PARA ADICIONAR UMA LISTA CASO A ANTERIOR FOR USADA
+        // ACESSA A POSSIÇÃO NA TABELA 
+        tabela += "<tr><td>" + dadosLista[i] +  "</td><td><button type='button'onclick='editar(parentNode.parent.Node.rowIndex)'>Editar</button></td></tr>";
+        // USADO PARA ADICIONAR UMA LISTA CASO A ANTERIOR FOR USADA E A CRIAÇÃO DO BOTÃO PARA EDIÇÃO
         document.getElementById("tabela").innerHTML = tabela;
         // PARA RECEBER A LISTA NA VARIAVEL TABELA COM O ELEMENTO GetElementBYID
     }
 }
-FUNÇÃO PARA EDITAR NOMES DE LISTA
+// FUNÇÃO PARA EDITAR NOMES DE LISTA
+function editar(i){
+    document.getElementById("nomeUser").value = dadosLista [(i -1)];
+    // TRAZER O VALOR DO ARRAY DE VOLTA PARA O CAMPO
+    dadosLista.splice(dadosLista)[(i -1)];
+}
+
