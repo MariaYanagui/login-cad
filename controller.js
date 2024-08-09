@@ -3,6 +3,7 @@
 function acessar() {
     let loginEmail = document.getElementById("loginEmail").value;
     // VALOR DA ENTRADA DO EMAIL PELO VALUE(QUE PEGA O VALOR DO INPUT)
+    O getElementByID recupera um elemento da página apenas pelo ID
     let loginSenha = document.getElementById("loginSenha").value;
     // VALOR DA ENTRADA DA SENHA
 
