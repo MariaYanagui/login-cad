@@ -4,8 +4,35 @@
 ### OBJETIVO DO PROJETO
 * Este projeto foi desenvolvido para permitir que os usuários realizem o login em um sistema.
 
-![alt text](image.png)
+![alt text](image.png)  <br>
+
 * O usuário devera adicionar os campos corretamente. 
-* O sistema (código) vai verificar os campos, caso esteja algo de forma incorreta ou não preechido um aleta vai aparecer e informar o usuário.
-* Assim que estiver tudo certo o usuário sera direcionado para a página de cadastro, onde podera adicionar nomes de membros podendo edita-los e excluir .
-![alt text](image-2.png)
+* O sistema (código) vai verificar os campos, caso esteja algo de forma incorreta ou não preechido um aleta vai aparecer e informar o usuário. <br>
+
+![alt text](image-2.png) <br>
+## CADASTRO
+* Assim que tudo estiver pronto, o usuário será encaminhado para a página de cadastro.
+![alt text](image-1.png)
+* Nessa página, ele poderá adicionar nomes de membros e salvar, além de ter a opção de editar ou excluir informações conforme necessário.
+![alt text](image-3.png)
+ # ELEMENTOS UTILIZADOS NO PROJETO
+## FUNÇÃO ACESSAR 
+*  Validar se os campos de email e senha estão preenchidos antes de redirecionar o usuário para uma nova página.
+ ### document.getElementById: recupera o valor do campo 
+ ### alert: aparecerá um alerta para o usuário 
+ ## FUNÇÃO SALVAR USER
+ *  Adicionar um nome à lista de usuários e atualizar a visualização da lista.
+ ### dadosLista.push(nomeUser): adiciona um nome à lista 
+ ### criaLista(): atualiza a visão da lista 
+ ## FUNÇÃO CRIAR LISTA 
+* Criar e atualizar a tabela de usuários com os nomes armazenados na lista.
+ ### document.getElementById("tabela").innerHTM: Define o HTML da tabela.
+ ### dadosLista[i]: acessa o nome a posição (i) da tabela.
+ ### FUNÇÃO EDITAR 
+ * Permitir a edição de um nome da lista
+ ### document.getElementById("nomeUser").value = dadosLista[(i - 1)]: Preenche o campo de nome com o valor selecionado para edição.
+ ### dadosLista.splice(i - 1, 1): para remover o item
+ ## FUNÇÃO EXCLUIR
+ * Excluir um nome da lista e atualizar a tabela.
+ ### dadosLista.splice((i - 1), 1): Remove o nome da lista na posição i - 1.
+ ### document.getElementById("tabela").deleteRow(i): Remove a linha da tabela na posição i.

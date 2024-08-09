@@ -50,7 +50,7 @@ function editar(i){
     document.getElementById("nomeUser").value = dadosLista [(i -1)];
     // TRAZER O VALOR DO ARRAY DE VOLTA PARA O CAMPO
     // O método splice faz o quê? altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos
-    dadosLista.splice(dadosLista)[(i -1)];
+    dadosLista.splice(dadosLista[(i - 1)], 1);
 }
 // FUNÇÃO PARA EXCLUIR NOME DE LISTA
 function excluir(i){
