@@ -56,6 +56,7 @@ function editar(i){
 function excluir(i){
     dadosLista.splice((i - 1), 1);
     document.getElementById("tabela").deleteRow(i);
+    // O índice passado para deleteRow deve ser verificado, pois a contagem de linhas pode não coincidir com os índices da lista 
     document.getElementById("nomeUser").value = "";
     // ADICIONEI O UM ELEMENTO PARA DEIXAR O NOME EM BRANCO APÓS O USO DO BOTÃO EXCLUIR 
 
