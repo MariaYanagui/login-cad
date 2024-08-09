@@ -2,7 +2,7 @@
 
 function acessar() {
     let loginEmail = document.getElementById("loginEmail").value;
-    // VALOR DA ENTRADA DO EMAIL 
+    // VALOR DA ENTRADA DO EMAIL PELO VALUE(QUE PEGA O VALOR DO INPUT)
     let loginSenha = document.getElementById("loginSenha").value;
     // VALOR DA ENTRADA DA SENHA
 
@@ -22,7 +22,7 @@ function acessar() {
 
     if(nomeUser){
         dadosLista.push(nomeUser);
-        // console.log(dadosLista); ( foi apenas usado para ver se o arreio foi preenchido)
+        // console.log(dadosLista); ( virou comentário pois foi apenas usado para ver se o array foi preenchido)
         criaLista();
         document.getElementById("nomeUser").value = "";
         // USADO PARA LIMPAR O CAMPO DE DIGITAÇÃO DA PÁGINA APÓS O USO (COLOCAR EM BRANCO)
@@ -30,6 +30,7 @@ function acessar() {
     }else{
         alert("Favor informe um nome para cadastro");
     }
+    // ALERTA CASO O CAMPO ESTEJA VAZIO 
 }
 
 // FUNÇAO PARA CRIAR LISTA DE USUÁRIOS 
@@ -47,6 +48,7 @@ function criaLista(){
 function editar(i){
     document.getElementById("nomeUser").value = dadosLista [(i -1)];
     // TRAZER O VALOR DO ARRAY DE VOLTA PARA O CAMPO
+    // O método splice faz o quê? altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos
     dadosLista.splice(dadosLista)[(i -1)];
 }
 // FUNÇÃO PARA EXCLUIR NOME DE LISTA
