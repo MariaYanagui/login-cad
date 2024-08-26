@@ -2,12 +2,13 @@
 
 ## LOGIN 
 ### OBJETIVO DO PROJETO
-* Este projeto foi desenvolvido para permitir que os usuários realizem o login em um sistema.
+O objetivo deste projeto é permitir que os usuários realizem o login em um sistema. Para isso, os usuários devem preencher corretamente os campos obrigatórios.
+
+
+* O usuário deve preencher todos os campos obrigatórios corretamente.
+* O sistema realizará a validação dos campos. Caso algum campo esteja incorreto ou não preenchido, um alerta será exibido para informar o usuário.
 
 ![alt text](image.png)  <br>
-
-* O usuário devera adicionar os campos corretamente. 
-* O sistema (código) vai verificar os campos, caso esteja algo de forma incorreta ou não preechido um aleta vai aparecer e informar o usuário. <br>
 
 ![alt text](image-2.png) <br>
 ## CADASTRO
