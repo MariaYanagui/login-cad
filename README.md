@@ -12,10 +12,23 @@ O objetivo deste projeto é permitir que os usuários realizem o login em um sis
 
 ![alt text](image-2.png) <br>
 ## CADASTRO
-* Assim que tudo estiver pronto, o usuário será encaminhado para a página de cadastro.
-![alt text](image-1.png)
-* Nessa página, ele poderá adicionar nomes de membros e salvar, além de ter a opção de editar ou excluir informações conforme necessário.
+Após um login bem-sucedido, o usuário será direcionado para a página de cadastro, onde poderá adicionar informações sobre membros.
+* Na página de cadastro, o usuário poderá adicionar nomes à lista, salvar as informações, e terá as opções de editar ou excluir os dados conforme necessário.
 ![alt text](image-3.png)
+# Implementação da Tabela de E-mail
+
+## Objetivo
+Garantir que os usuários forneçam um endereço de e-mail válido ao se registrar ou atualizar suas informações.
+
+## Funcionamento
+*  O sistema vai verifica se o e-mail inserido contém pelo menos um caractere "@" e um ponto ".".
+*  Se o e-mail não apresentar as caracteres, um alerta é exibido ao usuário para corrigir o e-mail.
+## Exemplo de Validação:
+* E-mail Válido: exemplo@um.com
+* E-mail Inválido: exemplo@dois (falta o ponto) ou exemplotrês.com (falta o @)
+![alt text](image-4.png)
+
+
  # ELEMENTOS UTILIZADOS NO PROJETO
 ## FUNÇÃO ACESSAR 
 *  Validar se os campos de email e senha estão preenchidos antes de redirecionar o usuário para uma nova página.
