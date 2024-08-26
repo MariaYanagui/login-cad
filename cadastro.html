@@ -18,10 +18,14 @@
         </div>
         <div class="container">
             <label for="">Email</label> <br>
+            <form action="" name="frmEnvia" onsubmit="return (verifica())">
+            <input type="text" name="email" onblur="checarEmail()"> <br>
             <input type="text" class="form-control" id="emailUser">
             <button type="button" onclick="salvarUser()" class="btn btn-danger">SALVAR</button>
         </div>
 
+        </form>
+        <div id="email"></div>
         <div class="container">
             <table class="table table-striped" id="tabela">
                 <tr>
