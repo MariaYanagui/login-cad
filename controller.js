@@ -76,26 +76,5 @@ function checarEmail(){
        {
         alert("Por favor, informe um email válido");
         return false;
-    }else{
-        alert("email informado com sucesso!");
-        document.getElementById("email").innerHTML = document.forms[0].email.value
-        }
-}
-
-
-
-// -----------------------------------------
-
-
-
-// CÓDIGO DE VERIFICAÇÃO DE EMAIL DIGITADO
-// -----------------------------------------
-
-function verifica(){
-    if(document.forms[0].email.value == 0){
-        alert("Por favor, corno, informe um e-mail");
-        document.frmEnvia.email.focus();
-        return false;
     }
-    return true; 
 }
