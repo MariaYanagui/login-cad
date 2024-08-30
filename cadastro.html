@@ -17,10 +17,15 @@
         </div>
         <div class="container">
             <label for="">Email</label> <br>
-            <form action="" name="frmEnvia" onsubmit="return (verifica())">
+            <form action="" name="frmEnvia">
             <input type="text" class="form-control" id="emailUser" name="email" > <br>
+        </div>
+        <div class="container">
+            <label for="">CPF</label> <br>
+            <input type="text" class="form-control" id="CPFUser" name="cpf" > <br>
             <button type="button" onclick="salvarUser()" class=" btn-danger">SALVAR</button>
         </div>
+
 
         </form>
         <div id="email"></div>
@@ -29,6 +34,7 @@
                 <tr>
                     <th>Nome Usuário</th>
                     <th> Email </th>
+                    <th> CPF </th>
                     <th> Ações </th>
                 </tr>
             </table>
