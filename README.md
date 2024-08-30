@@ -28,6 +28,13 @@ Garantir que os usuários forneçam um endereço de e-mail válido ao se registr
 * E-mail Inválido: exemplo@dois (falta o ponto) ou exemplotrês.com (falta o @)
 ![alt text](image-4.png)
 
+# Implementação da Tabela de CPF
+
+## Objetivo e funcionamento✅
+Os objetivos e funcionamentos do CPF são semelhantes ao do E-mail, o código ira verificar se o CPF é válido.
+* Verifica se o número de CPF inserido é válido e segue o padrão brasileiro, ajudando a evitar erros de digitação e fraudes. Cada CPF deve ter 11 dígitos e passar por um cálculo específico para confirmar sua autenticidade.
+![alt text](image-5.png)
+
 
  # ELEMENTOS UTILIZADOS NO PROJETO ⚙️
 ## FUNÇÃO ACESSAR 
